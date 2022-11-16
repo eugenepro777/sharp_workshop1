@@ -1,13 +1,17 @@
 ﻿// Напишите программу, которая принимает на вход
-// трёхзначное число и на выходе показывает последнюю цифру этого числа.
+// трёхзначное число и на выходе показывает последнюю
+//  цифру этого числа.
 
 Console.WriteLine("Введите трехзначное число: ");
-int a = Convert.ToInt32(Console.ReadLine());
+int numIn = Convert.ToInt32(Console.ReadLine());
 
-if (a > 100 && a <= 1000)
+if (numIn > 100 && numIn <= 1000)
 {
-    int b = a % 10;
-    Console.WriteLine("Последняя цифра: " + b);
+    int numOut = numIn % 10;
+    Console.WriteLine("Последняя цифра: " + numOut);
 }
 else
+{
     Console.WriteLine("Число не трехзначное");
+}
+    
